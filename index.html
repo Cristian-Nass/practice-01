@@ -18,8 +18,15 @@
   <section id="user-goal">
     <h2>My Course Goal</h2>
     <p>{{ outputGoal() }}</p>
-    <p>Learn more <a v-bind:href="vueLink">about vue</a>
-    </p>
+    <p>{{ Math.random() }}</p>
+    <p>Learn more <a v-bind:href="vueLink">about vue</a></p>
+    <img v-bind:src="imgLink" />
+    <div>
+      <button v-on:click="counter++">Increase</button>
+      <button v-on:click="counter--">Decrease</button>
+
+    </div>
+    <p>Resualt: {{ counter }}</p>
   </section>
 </body>
 
